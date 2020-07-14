@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: Unit-Test
+  image: rust:1.44.1
+  commands:
+    - cargo test
