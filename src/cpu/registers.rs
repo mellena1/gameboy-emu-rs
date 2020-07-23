@@ -1,4 +1,4 @@
-use super::flags_registers::FlagsRegister;
+use super::flags_register::FlagsRegister;
 
 macro_rules! register_getter {
     ( $x:expr, $y:expr ) => {

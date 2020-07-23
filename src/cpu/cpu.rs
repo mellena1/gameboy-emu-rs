@@ -51,7 +51,7 @@ impl CPU {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use super::super::flags_registers::FlagsRegister;
+    use super::super::flags_register::FlagsRegister;
 
     #[test]
     fn add() {
