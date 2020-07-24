@@ -21,3 +21,4 @@ A Gameboy emulator written in Rust. The goal of this project isn't to write the 
 ## References/Thanks
 - [Ryan Levick's guide](https://blog.ryanlevick.com/DMG-01/public/book/introduction.html) is a great jumping off point
 - [pandocs](http://bgb.bircd.org/pandocs.htm#cpuregistersandflags)
+- [Game Boy CPU Manual](http://marc.rawer.de/Gameboy/Docs/GBCPUman.pdf)
