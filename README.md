@@ -1,5 +1,7 @@
 # gameboy-emu-rs
 [![Build Status](https://ci.andrewmellen.org/api/badges/mellena1/gameboy-emu-rs/status.svg)](https://ci.andrewmellen.org/mellena1/gameboy-emu-rs)
+[![codecov](https://codecov.io/gh/mellena1/gameboy-emu-rs/branch/master/graph/badge.svg)](https://codecov.io/gh/mellena1/gameboy-emu-rs)
+
 
 
 A Gameboy emulator written in Rust. The goal of this project isn't to write the most feature rich emulator or even the most accurate emulator. This is exclusively a learning exercise for myself to learn more about emulation and the Rust language.
