@@ -71,8 +71,6 @@ impl Registers {
     }
 }
 
-
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -85,7 +83,8 @@ mod tests {
         r.set_af(0x0FF0);
         assert_eq!(r.a, 0x0F);
         assert_eq!(
-            r.f, FlagsRegister {
+            r.f,
+            FlagsRegister {
                 zero: true,
                 subtract: true,
                 half_carry: true,
