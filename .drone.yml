@@ -3,6 +3,18 @@ name: default
 
 steps:
 - name: Unit-Test
-  image: rust:1.44.1
+  image: rust:1.45.0
   commands:
-    - cargo test
+    - curl -L https://github.com/mozilla/grcov/releases/download/v0.5.15/grcov-linux-x86_64.tar.bz2 | tar jxf -
+    - mv grcov /usr/local/bin/
+    - make test-with-cov
+    - cat lcov.info
+
+- name: upload-coverage
+  image: plugins/codecov
+  settings:
+    required: true
+    files:
+      - lcov.info
+    token:
+      from_secret: codecov-token
