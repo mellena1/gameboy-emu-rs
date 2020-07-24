@@ -5,4 +5,4 @@ test-with-cov: export RUSTC_BOOTSTRAP=1
 test-with-cov:
 	cargo build
 	cargo test
-	grcov ./target/debug/ -s . -t lcov --llvm --branch --ignore-not-existing -o lcov.info
+	grcov ./target/debug/ -t lcov --llvm --branch --ignore-not-existing -o lcov.info

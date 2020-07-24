@@ -7,8 +7,8 @@ steps:
   commands:
     - curl -L https://github.com/mozilla/grcov/releases/download/v0.5.15/grcov-linux-x86_64.tar.bz2 | tar jxf -
     - mv grcov /usr/local/bin/
+    - cargo clean
     - make test-with-cov
-    - cat lcov.info
 
 - name: upload-coverage
   image: plugins/codecov
